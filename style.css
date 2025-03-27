@@ -525,7 +525,7 @@ html, body {
   }
   .top-right-contact {
     position: fixed;
-    top: 115px;    /* Adjusted: try lowering this value */
+    top: 120px;    /* Adjusted: try lowering this value */
     left:-15px;  /* Distance from the right edge */
     z-index: 9000; /* Increased z-index */
     /* Temporary debug styles: */
@@ -554,7 +554,7 @@ html, body {
   }
   .hero-content {
 
-    margin-top: -2rem;
+    margin-top: 0rem;
 
   }
   /* 3) Slideshow or large images => 100% width, auto height */
