@@ -69,10 +69,20 @@ html, body {
 
 .top-right-contact {
   position: fixed;
-  top: 80px;    /* Adjusted: try lowering this value */
-  right: -2px;  /* Distance from the right edge */
+  top: 85px;    /* Adjusted: try lowering this value */
+  right: 6px;  /* Distance from the right edge */
   z-index: 10000; /* Increased z-index */
   /* Temporary debug styles: */
+}
+
+
+
+.why-choose-us .top-right-contact{
+  position: fixed;
+  top: 85px;    /* Adjusted: try lowering this value */
+  right: 2px;  /* Distance from the right edge */
+  z-index: 10000; 
+
 }
     /**********************************************
       4) REUSE/DEFINE THE .btn-more STYLE
@@ -170,7 +180,7 @@ html, body {
   color: #fff;
   min-height: 100vh;
   box-sizing: border-box;
-  margin-top: 2rem;
+  margin-top: 1.4rem;
   padding: 0 1rem; /* horizontal padding so text isn't flush to edges */
 }
 
@@ -208,8 +218,13 @@ html, body {
   overflow: hidden;        /* ensures the rounded corners apply to the image */
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
+  flex: 0 1 45%;
   flex-direction: column;
 }
+.blueprint-card:nth-child(1) {
+  flex: 0 1 41%; /* Increase the basis for the first image */
+}
+
 
 /* Subtle hover effect */
 .blueprint-card:hover {
@@ -221,10 +236,6 @@ html, body {
 .blueprint-card img {
   height: auto;
   display: block;
-}
-
-.blueprint-card:nth-child(1) {
-  flex: 0 1 67%; /* Increase the basis for the first image */
 }
 
 /* Optional caption section inside the card */
@@ -245,7 +256,7 @@ html, body {
 .slideshow-container {
   position: relative;
   width: 320%;
-  max-width: 1300px;       /* or larger if you want it even bigger */      /* center it, add vertical space */
+  max-width: 1200px;       /* or larger if you want it even bigger */      /* center it, add vertical space */
   aspect-ratio: 16 / 9;    /* forces a consistent 16:9 shape */
   background-color: #000;  /* letterbox bars will appear black */
   overflow: hidden;
@@ -476,8 +487,8 @@ html, body {
     flex-direction: column;
     gap: 1rem;
   }
-  .blueprint-card {
-    width:40%; /* each card full width on mobile */
+  .blueprint-card { 
+    width:23%; /* each card full width on mobile */
   }
   .hamburger {
     display: block; /* show hamburger on mobile */
@@ -515,7 +526,7 @@ html, body {
   .top-right-contact {
     position: fixed;
     top: 115px;    /* Adjusted: try lowering this value */
-    left:1px;  /* Distance from the right edge */
+    left:-15px;  /* Distance from the right edge */
     z-index: 9000; /* Increased z-index */
     /* Temporary debug styles: */
   }
@@ -541,7 +552,11 @@ html, body {
   display: block;
     padding-top: 170px; /* Less vertical space on mobile */
   }
+  .hero-content {
 
+    margin-top: -2rem;
+
+  }
   /* 3) Slideshow or large images => 100% width, auto height */
   .slideshow-container,
   .hero-image-container {
