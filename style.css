@@ -223,6 +223,10 @@ html, body {
   display: block;
 }
 
+.blueprint-card:nth-child(1) {
+  flex: 0 1 67%; /* Increase the basis for the first image */
+}
+
 /* Optional caption section inside the card */
 .blueprint-caption {
   padding: 1rem;
@@ -473,7 +477,7 @@ html, body {
     gap: 1rem;
   }
   .blueprint-card {
-    width:29%; /* each card full width on mobile */
+    width:40%; /* each card full width on mobile */
   }
   .hamburger {
     display: block; /* show hamburger on mobile */
