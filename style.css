@@ -473,7 +473,7 @@ html, body {
     gap: 1rem;
   }
   .blueprint-card {
-    width:40%; /* each card full width on mobile */
+    width:29%; /* each card full width on mobile */
   }
   .hamburger {
     display: block; /* show hamburger on mobile */
